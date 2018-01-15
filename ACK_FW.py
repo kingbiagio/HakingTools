@@ -13,7 +13,7 @@ from scapy.all import *
 from threading import *
 
 if len(sys.argv) != 3:	
-	print (colored("<---FIREWALL DETECTION--->",'yellow'))
+	print (colored("<---FIREWALL DETECTIONER--->",'yellow'))
 	print (colored("Usage- ./ACK_FW.py [IP] [Port]", 'yellow'))
 	sys.exit()			
 
