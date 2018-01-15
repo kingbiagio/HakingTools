@@ -13,7 +13,7 @@ from termcolor import*
 
 if len(sys.argv) != 2:
 	print (colored("<--[ICMP DISCOVERY--]>",'red'))#Just banner
-	print (colored("Usage - ./pinger.py [IP/24 network address]\n",'red'))
+	print (colored("Usage - ./ICMPsender.py [IP/24 network address]\n",'red'))
 	sys.exit()
 
 address = str(sys.argv[1])
