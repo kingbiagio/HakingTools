@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Author Biagio
 #
-# It sends ARP packet to Subnet to sollicts a MAC
+# It sends ARP packet to Subnet to sollicts a MAC response 
 # requirements install scapy and termcolor libraries
 # apt install scapy 
 # pip install termcolor
