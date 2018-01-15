@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Simple ICMP Discovery tool
 # Author Biagio
-# sends ICMP Packet to subnet, to sollicits a response
+# sends ICMP Packet ECHO REQUEST to subnet, it sollicits a response
 # Requirements Scapy, termcolor pip install 
 # 
 
