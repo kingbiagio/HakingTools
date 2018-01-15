@@ -2,7 +2,7 @@
 # Auhtor Biagio
 #
 # stealth scanner, it doesn't complete the three way handshake
-# sends Syn flag, when receive Syn+Flag go ahead
+# sends TCP Syn flag, when receive Syn+Flag go ahead
 # requirements scapy, termcolor
 # apt-get install scapy
 # pip install termcolor
@@ -17,7 +17,7 @@ import multiprocessing
 
 
 if len(sys.argv) != 4:
-    print (colored("<-- SYN SCANNER -->",'blue'))# just banner
+    print (colored("<-- TCP SYN SCANNER -->",'blue'))# just banner
     print (colored("Usage - ./syn_scan.py [Target-IP] [First Port] [Last Port]",'blue')) #just description
     sys.exit()
 else:
