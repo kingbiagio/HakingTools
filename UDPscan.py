@@ -27,6 +27,6 @@ else:
     ans = sr1(IP(dst=ip)/UDP(dport=port),timeout=5,verbose =0)#change here for different Timeout&Verbose
     time.sleep(1)
     if ans == None:
-        print port
+        print (colored("port",'yellow'))
     else:
         pass
