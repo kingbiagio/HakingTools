@@ -1,5 +1,6 @@
 #!/usr/bin/python
-# 
+# Auhtor Biagio
+#
 # stealth scanner, it doesn't complete the three way handshake
 # requirements scapy, termcolor
 # apt-get install scapy
