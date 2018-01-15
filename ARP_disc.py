@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Author Biagio
 #
-# It sends ARP packet to Subnet
+# It sends ARP packet to Subnet to sollicts a MAC
 # requirements install scapy and termcolor libraries
 # apt install scapy 
 # pip install termcolor
@@ -15,7 +15,7 @@ from threading import*
 
 if len(sys.argv) != 2:
 	print (colored("<--ARP DISCOVERY-->",'blue'))# Just Banner
-	print (colored("Usage - ./arp_disc.py [interface]",'blue'))
+	print (colored("Usage - ./ARP_disc.py [interface]",'blue'))
 	sys.exit()
 
 interface = str(sys.argv[1]) # interface
