@@ -1,11 +1,11 @@
 #!/usr/bin/python
-#Auhtor Biagio
+# Auhtor Biagio
 #
 # It Send TCP ACK Flag, will determine if port is Filtred or Not 
 # if port is filtered we received a RST flag
-#
+# Requirements termcolor "pip install termcolor"
 
-from termcolor import colored
+from termcolor import*
 import sys
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
@@ -33,10 +33,10 @@ if (ACK_response == None) and (SYN_response == None) :
 elif ((ACK_response == None) or (SYN_response == None)) and not ((ACK_response == None) and (SYN_response == None)):
 	print(colored("[!]Port is Filtered and Open",'red'))
 
-elif int(SYN_response[TCP].flags) == 18:#Change different flag
+elif int(SYN_response[TCP].flags) == 18:#Change different value flag
 	print(colored("[+]Port is Unfiltered and Open",'green'))
 
-elif int(SYN_response[TCP].flags) == 20:#Change here for different Flag
+elif int(SYN_response[TCP].flags) == 20:#Change here for different value Flag
 	print(colored("[+]Port is Unfiltered and Close",'yellow'))
 
 else:
