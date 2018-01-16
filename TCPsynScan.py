@@ -17,15 +17,16 @@ import multiprocessing
 
 
 if len(sys.argv) != 4:
-    print (colored("<-- TCP SYN SCANNER -->",'blue'))# just banner
-    print (colored("Usage - ./syn_scan.py [Target-IP] [First Port] [Last Port]",'blue')) #just description
+    print (colored("Usage - ./TCPsynScan_scan.py [Target-IP] [First Port] [Last Port]",'blue')) #just description
     sys.exit()
 else:
  ip = sys.argv[1]
  start = int(sys.argv[2])
  end = int(sys.argv[3])
 
- for port in range(start,end):
+print (colored("<-- SYN SCANNER -->",'green'))
+
+for port in range(start,end):
     ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=1,verbose =0)#variable created in scapy, change here for timeout&verbose
     if ans == None:
         pass
