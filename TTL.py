@@ -21,7 +21,7 @@ logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 if len(sys.argv) != 2:
 	print(colored("<--TTL ANALYZER-->",'blue'))#just banner
-	print "Usage - ./ttl.py [Target IP]"
+	print "Usage - ./TTL.py [Target IP]"
 	sys.exit()
 
 ip = sys.argv[1]
