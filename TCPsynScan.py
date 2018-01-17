@@ -4,16 +4,19 @@
 # Python 2                                                     |
 # Auhtor Biagio                                                |
 # Version 1.3                                                  |
+#                                                              |
 # Bug fixes, increased speed, print Open & Closed Ports        |
 # stealth scanner, it doesn't complete the three way handshake |
-# sends TCP Syn flag, when receive Syn+Flag goes ahead         |
+#                                                              |
 # requirements scapy, termcolor                                |
 # apt-get install scapy                                        |
 # pip install termcolor                                        | 
-# default Timeout 5 seconds                                    |
-# Usage - ./TCPsynScan.py [IP] [First Port] [Last Port]        |
+# default Timeout 5 seconds                                    | 
 #                                                              |
+# Usage - ./TCPsynScan.py [IP] [First Port] [Last Port]        |
+# Example - ./TCPsynScan.py 8.8.8.8 1 80                       |
 #--------------------------------------------------------------
+
 
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
