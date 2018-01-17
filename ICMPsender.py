@@ -8,6 +8,8 @@
 # Requirements Scapy, termcolor pip install 
 # 
 # Usage - ./ICMPsender.py [IP/24 CIDR]
+# Example - ./ICMPsender.py [192.168.0.1/24]
+#
 
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
