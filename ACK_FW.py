@@ -1,9 +1,15 @@
 #!/usr/bin/python
-# Auhtor Biagio
 #
+# Python 2
+# Auhtor Biagio
+# Version 1.1
 # It Send TCP ACK Flag, will determine if port is Filtred or Not 
 # if port is filtered we received a RST flag
 # Requirements termcolor "pip install termcolor"
+# 
+# Usage - ./ACK_FW [Target IP] [Port]
+# Example - ./ACK_FW 8.8.8.8 53
+#
 
 from termcolor import*
 import sys
