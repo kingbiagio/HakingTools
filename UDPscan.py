@@ -4,14 +4,14 @@
 # Python 2                                                   |
 # Author Biagio                                              |
 # Version 1.3                                                |
-# Bug Fixes, increase speed, print Closed Port & Opne Ports  |
+# Bug Fixes, increase speed, print Closed Port & Open Ports  |
 #                                                            |
 # Requirements: install termcolor "pip install termcolor"    |
 #               apt-get install scapy                        |
 #               install scapy "pip install scapy"            |
-# Default Timeout 10 seconds                                 |
+# Default Timeout 5 seconds                                  |
 # Usage - ./UDPscan.py [IP] [First Port] [Last Port]         |
-#                                                            |
+# Example - ./UDPscan.py 8.8.8.8 1 100                       |
 # -----------------------------------------------------------
 
 import logging
