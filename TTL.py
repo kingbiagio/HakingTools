@@ -1,8 +1,11 @@
 #!/usr/bin/python2.7
 #
-# Python version2
+# Author Biagio
+# Python 2
+# Version 1.1
 # Requirements colored "pip install termcolor"
-# it analyzes TTL value, to determinate if Os 
+#
+# It analyzes TTL value, to determinate if Os 
 # is Microsoft/windows or Linux/unix & CiscoRouterNetwork 
 #
 #  -------------------------------
@@ -10,8 +13,12 @@
 # |  Microsoft/Windows:  128 ttl  |
 # |  Unix/Like:           64 ttl  |
 #  ------------------------------- 
+# Usage ./TTL.py 8.8.8.8
+# Example ./TTL.py 8.8.8.8
 #
 
+
+import multiprocessing
 from threading import *
 from scapy.all import *
 import logging
