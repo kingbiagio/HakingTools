@@ -1,8 +1,10 @@
 #!/usr/bin/python2
 #
 # Author Biagio
+# Version 1.1
+# Python 2
 # Simple ssh brute
-# requirements termcolor, paramiko 
+# Requirements termcolor, paramiko 
 # "pip install termcolor"; pip install paramiko
 # 
 
@@ -13,6 +15,7 @@ import os
 import socket
 from termcolor import *
 from threading import *
+import multiprocessing
 
 global host, username, input_file #global variables
 
