@@ -1,20 +1,28 @@
 #!/usr/bin/python
+#
 # Author Biagio
+# Version 1.1
 #
 # It sends ARP packet to Subnet to sollicts a IP response 
 # requirements install scapy and termcolor libraries
-# apt install scapy 
+# apt install scapy && pip install scapy
 # pip install termcolor
+#
+# Usage ./ARP_disc.py [Interface]
+# Example ./ARP_disc.py [eth0]  "<type ifconfig to see your Interface>"
+#
+
 
 import logging
 import subprocess
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import*
 from termcolor import*  
-from threading import*
+from threadirtng import*
+import multiprocessing
 
 if len(sys.argv) != 2:
-	print (colored("Usage - ./ARP_disc.py [interface]",'blue'))
+	print (colored("Usage - ./ARP_disc.py [Interface]",'blue'))
 	sys.exit()
 
 interface = str(sys.argv[1]) # interface
@@ -24,7 +32,7 @@ prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.
 print (colored("<--ARP DISCOVERY-->",'blue'))
 
 for addr in range(1,254):#change this for different Subnet, In this case is \24
-	answer=sr1(ARP(pdst=prefix+str(addr)),timeout=1,verbose=0) #variable created in scapy If you need change here for Timeout & Verbose
+	answer=sr1(ARP(pdst=prefix+str(addr)),timeout=1,verbose=0) #If you need change here for Timeout & Verbose
 	if answer == None: 
 		pass
 	else:
