@@ -71,7 +71,7 @@ for i in input_file.readlines():
 			sys.exit(2)
 			
 	except KeyboardInterrupt:# If user press Ctrl+c
-		print (colored("\n\n[*] Proccess Stopped By User",'red'))
+		print (colored("\n\n[*] Process Stopped By User",'red'))
 		print(colored("[+] See You ;)"))
 		sys.exit(3)
 	except Exception, e:
