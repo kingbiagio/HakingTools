@@ -47,6 +47,6 @@ for port in range(start,end+1):
     
     #If user press Ctrl+c
     except KeyboardInterrupt:
-        print "[!] Proccess Stopped"
+        print "[!] Process Stopped"
         sys.exit()
 
