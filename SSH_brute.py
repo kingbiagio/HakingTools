@@ -34,7 +34,7 @@ try:
 		sys.exit(4)
 
 except KeyboardInterrupt:# if user press Ctrl+c 
-	print (colored("\n\n[*] Proccess Stopped By User", 'red'))
+	print (colored("\n\n[*] Process Stopped By User", 'red'))
 	print(colored("[+] See You ;)",'yellow'))
 	sys.exit(3)
 
