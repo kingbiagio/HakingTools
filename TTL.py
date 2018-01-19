@@ -32,7 +32,7 @@ if len(sys.argv) != 2:
 	sys.exit()
 
 ip = sys.argv[1]              
-ans= sr1(IP(dst=str(ip))/ICMP(), timeout=1, verbose=0)# Scapy variable set to [ICMP] protocol,
+ans= sr1(IP(dst=str(ip))/ICMP(), timeout=5, verbose=0)# Scapy variable set to [ICMP] protocol,
                                                       # Change here for different Timeout&Verbose
 	                         
 print (colored("<--TTL ANALYZER-->",'yellow'))
