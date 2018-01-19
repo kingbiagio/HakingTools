@@ -21,7 +21,7 @@ global host, username, input_file #global variables
 
 line = "\n-------------------------------------------------------------------------\n"
 
-print (colored("<<< [+] Ssh Bruteforce >>>",'yellow'))
+print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
 print(colored("[?] Press Ctrl+c tu quit\n",'grey'))
 try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
