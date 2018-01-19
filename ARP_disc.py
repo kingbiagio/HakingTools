@@ -18,7 +18,7 @@ import subprocess
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import*
 from termcolor import*  
-from threadirtng import*
+from threading import*
 import multiprocessing
 
 if len(sys.argv) != 2:
@@ -39,6 +39,6 @@ for addr in range(1,254): # Change here for different CIDR
 		else: 
 			print prefix+str(addr)
 	# If User press Ctrl+c, tool will be quit
-	except KeyboardIterrupt:
+	except KeyboardInterrupt:
 		print (colored("[!] Proccess Stopped"))
 		sys.exit()
