@@ -18,7 +18,7 @@ import time
 
 print (colored("\n<<<< MD5 CRACKER >>>\n",'yellow')) # just banner
 counter=1
-user= raw_input(colored("[+] Insert User's hash You wish to Crack (or Otherwise Press Enter): ",'yellow'))#Banner
+user= raw_input(colored("[+] Insert User's hash You wish to Crack (or Press Enter to Skip): ",'yellow'))#Banner
 pass_in= raw_input (colored("[+] Insert User's MD5 hash: ",'yellow'))
 pwfile= raw_input (colored("[+] Insert your path file name: ",'yellow'))
 
