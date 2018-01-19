@@ -2,7 +2,7 @@
 #
 # Python 2
 # Auhtor Biagio
-# Version 1.1
+# Version 1.2
 # It Send TCP ACK Flag, will determine if port is Filtred or Not 
 # if port is filtered we received a RST flag
 # Requirements termcolor "pip install termcolor"
@@ -17,6 +17,7 @@ import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 from threading import *
+import multiprocessing
 
 if len(sys.argv) != 3:	
 	print (colored("Usage- ./ACK_FW.py [IP] [Port]", 'yellow'))
