@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Author Biagio
-# Version 1.1
+# Version 1.2
 #
 # It sends ARP packet to Subnet to sollicts a IP response 
 # requirements install scapy and termcolor libraries
@@ -29,11 +29,16 @@ interface = str(sys.argv[1]) # interface
 ip = subprocess.check_output("ifconfig " + interface + " | grep 'inet ' |  awk '{ print $2 }' | cut -d ':' -f2", shell=True).strip() # simple grep
 prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.'  
 
-print (colored("<--ARP DISCOVERY-->",'blue'))
+print (colored("<--ARP SENDER-->",'blue'))
 
-for addr in range(1,254):#change this for different Subnet, In this case is \24
-	answer=sr1(ARP(pdst=prefix+str(addr)),timeout=1,verbose=0) #If you need change here for Timeout & Verbose
-	if answer == None: 
-		pass
-	else:
-		print (colored(prefix+str(addr),'blue'))
+for addr in range(1,254): # Change here for different CIDR
+	try: 
+		answer=sr1(ARP(pdst=prefix+str(addr)),timeout=1,verbose=0) #If you need change here for Timeout & Verbose
+		if answer == None: 
+			pass 
+		else: 
+			print prefix+str(addr)
+	# If User press Ctrl+c, tool will be quit
+	except KeyboardIterrupt:
+		print (colored("[!] Proccess Stopped"))
+		sys.exit()
