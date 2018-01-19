@@ -28,9 +28,13 @@ prefix = address.split('.')[0] + '.' + address.split('.')[1] + '.' + address.spl
 
 print (colored("<--ICMP DISCOVERY-->",'red'))
 
-for addr in range(1,254):  ## edit this for different Subnet in this example is \24
-	answer=sr1(IP(dst=prefix+str(addr))/ICMP(),timeout=1 , verbose=0)#Change here for different Timeout
-	if answer == None:
-		pass
-	else:
-		print (colored(prefix+str(addr),'red'))
+for addr in range(1,254): 
+	try: 
+		answer=sr1(IP(dst=prefix+str(addr))/ICMP(),timeout=1 , verbose=0)#Change here for different Timeout 
+		if answer == None: 
+			pass 
+		else: 
+			print (colored(prefix+str(addr),'red')) 
+	#When User Press Ctrl+c,tool will be Closed 
+	except KeyboarInterrupt:
+		print "[!] Proccess Stopped "
