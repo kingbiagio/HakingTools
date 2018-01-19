@@ -36,5 +36,6 @@ for addr in range(1,254):
 		else: 
 			print (colored(prefix+str(addr),'red')) 
 	#When User Press Ctrl+c,tool will be Closed 
-	except KeyboarInterrupt:
+	except KeyboardInterrupt:
 		print "[!] Proccess Stopped "
+                sys.exit()
