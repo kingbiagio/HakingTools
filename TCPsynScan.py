@@ -39,9 +39,9 @@ end = int(sys.argv[3])
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))#banner
 
 for port in range(start,end+1):
-    try:
-        ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=5 ,verbose =0) #variable created in scapy, change here for timeout&verbose
-        time.sleep(1)
+    try:                                   #change here different timeout&verbose
+        ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=5 ,verbose=0) #variable created in scapy
+        time.sleep(0.4)#change here different time sleep
         if ans == None:    
             pass
         else:
