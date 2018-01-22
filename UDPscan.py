@@ -1,9 +1,10 @@
 #!/usr/bin/python
-#
+# not yet Stable!!!
+# some Bug are yet in place!!
 # -----------------------------------------------------------
 # Python 2                                                   |
 # Author Biagio                                              |
-# Version 1.3                                                |
+# Version 1.3beta                                            |
 # Bug Fixes, increase speed, print Closed Port & Open Ports  |
 #                                                            |
 # Requirements: install termcolor "pip install termcolor"    |
