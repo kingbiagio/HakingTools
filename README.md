@@ -10,5 +10,5 @@
 # Other tools Coming Soon!!
 # Of course are OpenSource you can Edit&Share etc..
 #
-# If you know how to Improve tools, You can contact me!!
+# If you want to Improve tools, You can Join in !! :)
 # 
