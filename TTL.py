@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 #
-# Author Biagio
+# Author SciancaBestia
 # Python 2
 # Version 1.1
 # Requirements colored "pip install termcolor"
