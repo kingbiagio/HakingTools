@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 #
-# Author Biagio
+# Author SciancaBestia
 # Version 1.2
 # Python 2
 # Simple Hash md5 Cracker, run it with python 2.7
