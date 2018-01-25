@@ -1,6 +1,6 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 #
-# Author Biagio
+# Author Sciancabestia
 # Version 1.1
 # Python 2
 # Simple ssh brute
