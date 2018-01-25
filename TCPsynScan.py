@@ -40,14 +40,13 @@ else:
     Author = "SciankaBestia"
 
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))#banner
-print "Timeout is set to [5] Seconds"
 print "Version:",version
 print "Author:" ,Author ,"\n"
 
 
 for port in range(start,end+1):
     try:
-        ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=5 ,verbose =0) #variable created in scapy, change here for timeout&verbose
+        ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=1 ,verbose =0) #variable created in scapy, change here for timeout&verbose
         time.sleep(0.2)
         if ans == None: 
             print port,"TCP", (colored("[NO RESPONSE RETURNED, PORT FILTERED/CLOSED]",'red'))# port is either Filtered or Closed
