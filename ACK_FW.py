@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Python 2
-# Auhtor Biagio
+# Auhtor SciankaBestia
 # Version 1.2
 # It Send TCP ACK Flag, will determine if port is Filtred or Not 
 # if port is filtered we received a RST flag
