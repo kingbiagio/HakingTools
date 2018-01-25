@@ -2,7 +2,7 @@
 #
 # Python 2
 # Simple ICMP Discovery tool
-# Author Biagio
+# Author SciancaBestia
 # Version 1.1
 # sends ICMP Packet ECHO REQUEST to subnet, it sollicits a response
 # Requirements Scapy, termcolor pip install 
