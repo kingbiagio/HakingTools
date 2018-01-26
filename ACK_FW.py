@@ -40,7 +40,7 @@ print "Author",Author,"\n"
 # is either unstatefully filtered or Host is Down
 try: 
     if (ACK_response == None) and (SYN_response == None): 
-        print(colored("[+]Port is either Unstatefully FILTERED/CLOSED",'red')),[port]
+        print(colored("[+]Port is either Unstatefully FILTERED",'red')),[port]
         
         # if one Response of Variable is None, Port is Filtered 
     elif ((ACK_response == None) or (SYN_response == None)) and not ((ACK_response == None) and (SYN_response == None)): 
