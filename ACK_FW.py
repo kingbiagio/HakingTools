@@ -52,7 +52,7 @@ try:
     elif int(SYN_response[TCP].flags) == 20:#Change here for different Flag value 
         print(colored("[+]PORT IS UNFILTERED & CLOSED",'yellow')),[port] 
     else: 
-        print(colored("[!]ERROR COULDN'T S FILTERED OR NOT",'red')), [port]
+        print(colored("[!]ERROR COULDN'T DETERMINE IF PORT IS FILTERED OR NOT",'red')), [port]
 except KeyboardInterrupt:
     print "[*] Proccess Stopped"
     sys.exit()
