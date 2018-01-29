@@ -44,15 +44,15 @@ try:
         
         # if one Response of Variable is None, Port is Filtered 
     elif ((ACK_response == None) or (SYN_response == None)) and not ((ACK_response == None) and (SYN_response == None)): 
-        print(colored("[!]Port is FILTERED and OPEN",'red')),[port] 
+        print(colored("[!]PORT IS FILTERED & OPEN",'red')),[port] 
     
     elif int(SYN_response[TCP].flags) == 18:#Change different flag value 
-       print(colored("[+]Port is UNFILTERED and OPEN",'green')),[port]
+       print(colored("[+]PORT IS UNFILTERED & OPEN",'green')),[port]
 
     elif int(SYN_response[TCP].flags) == 20:#Change here for different Flag value 
-        print(colored("[+]Port is UNFILTERED and CLOSED",'yellow')),[port] 
+        print(colored("[+]PORT IS UNFILTERED & CLOSED",'yellow')),[port] 
     else: 
-        print(colored("[!]ERROR Unable to determine if the Port is FILTERED or not",'red')),[port]
+        print(colored("[!]ERROR COULDN'T S FILTERED OR NOT",'red')), [port]
 except KeyboardInterrupt:
     print "[*] Proccess Stopped"
     sys.exit()
