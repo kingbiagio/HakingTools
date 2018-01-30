@@ -43,9 +43,9 @@ for port in range(start,end+1):
         ans = sr1(IP(dst=ip)/UDP(dport=port),timeout=5,verbose =0)#change here for different Timeout&Verbose
         time.sleep(1) 
         if ans == None: 
-            print port, (colored("[OPEN]",'green'))# print open port 
+            print port,"UDP",(colored("[OPEN]",'green'))# print open port 
         else: 
-            print port,(colored("[CLOSED]",'green'))# print closed port
+            print port,"UDP",(colored("[CLOSED]",'red'))# print closed port
             pass
     #If user press Ctrl+c
     except KeyboardInterrupt:
