@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 #
-# Author SciancaBestia
+# Author ScianKaBestia
 # Version 1.2
 # Python 2
 # Simple Hash md5 Cracker, run it with python 2.7
@@ -16,7 +16,8 @@ import md5
 from termcolor import*
 import time
 
-print (colored("\n<<<< MD5 CRACKER >>>\n",'yellow')) # just banner
+print (colored("\n<<<< MD5 CRACKER >>>",'yellow')) # just banner
+print "Author: ScianKaBestia\n"
 counter=1
 user= raw_input(colored("[+] Insert User's hash You wish to Crack (or Press Enter to Skip): ",'yellow'))#Banner
 pass_in= raw_input (colored("[+] Insert User's MD5 hash: ",'yellow'))
