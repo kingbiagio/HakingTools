@@ -39,8 +39,9 @@ else:
     version = 1.4
     Author = "ScianKaBestia"
 
+# Banner
 print "----------------------------------------"
-print (colored("<--TCP SYN PORT SCANNER-->",'blue'))#banner
+print (colored("<--TCP SYN PORT SCANNER-->",'blue'))
 print "Version:",version
 print "Author:" ,Author
 print "----------------------------------------\n"
