@@ -2,8 +2,8 @@
 #
 #--------------------------------------------------------------
 # Python 2                                                     |
-# Auhtor Biagio                                                |
-# Version 1.4                                                  |
+# Auhtor: ScianKaBestia                                        |
+# Version: 1.4                                                 |
 #                                                              |
 # Bug fixes, increased speed, print Open & Closed Ports        |
 #                                         Filtered Ports       |
@@ -37,7 +37,7 @@ else:
     start = int(sys.argv[2]) 
     end = int(sys.argv[3])
     version = 1.4
-    Author = "SciankaBestia"
+    Author = "ScianKaBestia"
 
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))#banner
 print "Version:",version
