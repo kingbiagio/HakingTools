@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 #
-# Author SciancaBestia
+# Author ScianKaBestia
 # Python 2
 # Version 1.1
 # Requirements colored "pip install termcolor"
@@ -36,6 +36,7 @@ ans= sr1(IP(dst=str(ip))/ICMP(), timeout=5, verbose=0)# Scapy variable set to [I
                                                       # Change here for different Timeout&Verbose
 	                         
 print (colored("<--TTL ANALYZER-->",'yellow'))
+print "Author: ScianKaBestia\n"
 if ans== None: # if none response was returned there is a Firewall behind or Host is Down
 	print(colored("[!] No response was returned Firewall blocks [ICMP] or Host is Down",'red'))
 
