@@ -3,7 +3,7 @@
 # some Bug are yet in place!!
 # -----------------------------------------------------------
 # Python 2                                                   |
-# Author Biagio                                              |
+# Author ScianKabestia                                       |
 # Version 1.3beta                                            |
 # Bug Fixes, increase speed, print Closed Port & Open Ports  |
 #                                                            |
@@ -36,6 +36,7 @@ else:#--global variables--#
     end = int(sys.argv[3])
 
 print(colored("<--- UDP PORT SCANNER --->",'blue'))
+print "Author: ScianKaBestia\n"
 
 for port in range(start,end+1):
     try: 
