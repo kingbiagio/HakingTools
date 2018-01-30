@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Author Sciancabestia
+# Author ScianKabestia
 # Version 1.1
 # Python 2
 # Simple ssh brute
@@ -22,7 +22,8 @@ global host, username, input_file #global variables
 line = "\n-------------------------------------------------------------------------\n"
 
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
-print(colored("[?] Press Ctrl+c tu quit\n",'grey'))
+print "Author: ScoanKaBestia\n"
+
 try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
 	username= raw_input(colored("[+] Enter SSH Username: ",'blue'))#just banner
@@ -35,7 +36,6 @@ try:
 
 except KeyboardInterrupt:# if user press Ctrl+c 
 	print (colored("\n\n[*] Process Stopped", 'red'))
-	print(colored("[+] See You ;)",'yellow'))
 	sys.exit(3)
 
 def ssh_connect(password, code=0): #[+] Connection Established
