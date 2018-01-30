@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Author SciancaBestia
+# Author ScianKaBestia
 # Version 1.2
 #
 # It sends ARP packet to Subnet to sollicts a IP response 
@@ -30,6 +30,7 @@ ip = subprocess.check_output("ifconfig " + interface + " | grep 'inet ' |  awk '
 prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.'  
 
 print (colored("<--ARP SENDER-->",'blue'))
+print "Author: SciankaBestia\n"
 
 for addr in range(1,254): # Change here for different CIDR
 	try: 
