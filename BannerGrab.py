@@ -15,7 +15,7 @@ import socket
 
 print(colored("<-- BANNER GRABBING -->",'red'))
 print "Version: 0.1beta"
-print "Author: SciankaBestia"
+print "Author: ScianKaBestia"
 print "Timeout is set 20 Seconds\n"
 
 socket.setdefaulttimeout(20)# Timeout
