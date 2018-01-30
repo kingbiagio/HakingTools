@@ -35,8 +35,11 @@ else:#--global variables--#
     start = int(sys.argv[2]) 
     end = int(sys.argv[3])
 
+print "------------------------------------"
 print(colored("<--- UDP PORT SCANNER --->",'blue'))
-print "Author: ScianKaBestia\n"
+print "Author: ScianKaBestia"
+print "Version: 1.3beta"
+print "------------------------------------\n"
 
 for port in range(start,end+1):
     try: 
