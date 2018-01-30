@@ -39,10 +39,11 @@ else:
     version = 1.4
     Author = "ScianKaBestia"
 
+print "----------------------------------------"
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))#banner
 print "Version:",version
-print "Author:" ,Author ,"\n"
-
+print "Author:" ,Author
+print "----------------------------------------\n"
 
 for port in range(start,end+1):
     try:
