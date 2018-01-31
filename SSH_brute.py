@@ -22,7 +22,7 @@ global host, username, input_file #global variables
 line = "\n-------------------------------------------------------------------------\n"
 
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
-print "Author: ScoanKaBestia\n"
+print "Author: ScianKaBestia\n"
 
 try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
