@@ -16,8 +16,11 @@ import md5
 from termcolor import*
 import time
 
+print "------------------------------------------"
 print (colored("\n<<<< MD5 CRACKER >>>",'yellow')) # just banner
-print "Author: ScianKaBestia\n"
+print "Author: ScianKaBestia"
+print "------------------------------------------\n"
+
 counter=1
 user= raw_input(colored("[+] Insert User's hash You wish to Crack (or Press Enter to Skip): ",'yellow'))#Banner
 pass_in= raw_input (colored("[+] Insert User's MD5 hash: ",'yellow'))
