@@ -32,9 +32,11 @@ Version = 1.2
 ACK_response = sr1(IP(dst= ip)/TCP(dport= port, flags='A'), timeout=1, verbose=0)
 SYN_response = sr1(IP(dst= ip)/TCP(dport= port, flags='S'), timeout=1, verbose=0)
 
+print "--------------------------------------------"
 print (colored("<--FIREWALL DETECTION-->",'red'))
 print "Version",Version
-print "Author",Author,"\n"
+print "Author",Author
+print "-------------------------------------------\n"
 
 # If ACK_response and SYN_response are NONE, the Port
 # is either unstatefully filtered or Host is Down
