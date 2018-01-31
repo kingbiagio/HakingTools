@@ -13,10 +13,12 @@ from termcolor import*
 from socket import*
 import socket
 
+print "---------------------------------------"
 print(colored("<-- BANNER GRABBING -->",'red'))
 print "Version: 0.1beta"
 print "Author: ScianKaBestia"
-print "Timeout is set 20 Seconds\n"
+print "Timeout is set 20 Seconds"
+print "---------------------------------------\n"
 
 socket.setdefaulttimeout(20)# Timeout
 sock = socket.socket()
