@@ -34,9 +34,10 @@ if len(sys.argv) != 2:
 ip = sys.argv[1]              
 ans= sr1(IP(dst=str(ip))/ICMP(), timeout=5, verbose=0)# Scapy variable set to [ICMP] protocol,
                                                       # Change here for different Timeout&Verbose
-	                         
+print "---------------------------------"	                         
 print (colored("<--TTL ANALYZER-->",'yellow'))
-print "Author: ScianKaBestia\n"
+print "Author: ScianKaBestia"
+print "---------------------------------\n"
 if ans== None: # if none response was returned there is a Firewall behind or Host is Down
 	print(colored("[!] No response was returned Firewall blocks [ICMP] or Host is Down",'red'))
 
