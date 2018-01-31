@@ -29,8 +29,10 @@ interface = str(sys.argv[1]) # interface
 ip = subprocess.check_output("ifconfig " + interface + " | grep 'inet ' |  awk '{ print $2 }' | cut -d ':' -f2", shell=True).strip() # simple grep
 prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.'  
 
+print "-----------------------------------"
 print (colored("<--ARP SENDER-->",'blue'))
-print "Author: SciankaBestia\n"
+print "Author: SciankaBestia"
+print "-----------------------------------\n"
 
 for addr in range(1,254): # Change here for different CIDR
 	try: 
