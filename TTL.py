@@ -37,7 +37,9 @@ ans= sr1(IP(dst=str(ip))/ICMP(), timeout=5, verbose=0)# Scapy variable set to [I
 print "---------------------------------"	                         
 print (colored("<--TTL ANALYZER-->",'yellow'))
 print "Author: ScianKaBestia"
+print "Version: 1.1"
 print "---------------------------------\n"
+
 if ans== None: # if none response was returned there is a Firewall behind or Host is Down
 	print(colored("[!] No response was returned Firewall blocks [ICMP] or Host is Down",'red'))
 
