@@ -29,6 +29,7 @@ prefix = address.split('.')[0] + '.' + address.split('.')[1] + '.' + address.spl
 print "-------------------------------------"
 print (colored("<--ICMP DISCOVERY-->",'red'))
 print "Author: ScianKaBestia"
+print "Version: 1.1"
 print "-------------------------------------\n"
 
 for addr in range(1,254): 
