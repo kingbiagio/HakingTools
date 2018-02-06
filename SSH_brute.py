@@ -19,10 +19,11 @@ import multiprocessing
 
 global host, username, input_file #global variables
 
-line = "\n-------------------------------------------------------------------------\n"
-
+print "------------------------------"
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
-print "Author: ScianKaBestia\n"
+print "Author: ScianKaBestia"
+print "Version: 1.1"
+print "------------------------------\n"
 
 try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
