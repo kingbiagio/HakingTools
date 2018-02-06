@@ -67,7 +67,7 @@ for i in input_file.readlines():
 		elif response==1: #[!]Authentication Failed
 			print(colored("[?] User: %s [?] Tryng Password: %s  Login Incorrect!" %(username,password),'yellow'))
 		elif response==2: #[!]Connection Refused
-			print(colored("[?] Unbale to Connect to Target: %s ,maybe Host is down or there is a Firewall behind" %(host),'yellow'))
+			print(colored("[?] Unbale to Connect to Target: %s ,maybe Host is Down or there is a Firewall in place" %(host),'yellow'))
 			sys.exit(2)
 			
 	except KeyboardInterrupt:# If user press Ctrl+c
