@@ -17,8 +17,9 @@ from termcolor import*
 import time
 
 print "------------------------------------------"
-print (colored("\n<<<< MD5 CRACKER >>>",'yellow')) # just banner
+print (colored("<<<< MD5 CRACKER >>>",'yellow')) # just banner
 print "Author: ScianKaBestia"
+print "Version: 1.2"
 print "------------------------------------------\n"
 
 counter=1
