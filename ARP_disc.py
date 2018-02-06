@@ -31,7 +31,8 @@ prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.
 
 print "-----------------------------------"
 print (colored("<--ARP SENDER-->",'blue'))
-print "Author: SciankaBestia"
+print "Author: ScianKaBestia"
+print "Version: 1.2"
 print "-----------------------------------\n"
 
 for addr in range(1,254): # Change here for different CIDR
