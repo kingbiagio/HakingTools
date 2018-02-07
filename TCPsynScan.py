@@ -51,7 +51,7 @@ for port in range(start,end+1):
         ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=1 ,verbose =0) #variable created in scapy, change here for timeout&verbose
         time.sleep(0.2)
         if ans == None: 
-            print port,"TCP", (colored("[NO RESPONSE RETURNED, PORT FILTERED]",'red'))# port is either Filtered or Closed
+            print port,"TCP", (colored("[NO RESPONSE RETURNED, PORT FILTERED/HOST DOWN]",'red'))# port is either Filtered or Closed
             pass
         else:
             if int(ans[TCP].flags) == 18:
