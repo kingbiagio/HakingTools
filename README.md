@@ -1,12 +1,15 @@
-# tools
+# Basic Hacking T00ls 
 #
 # Maintainers
 # Just me!!
 #
-# Author Biagio Email: kingmikaelone@gmail.com
+# Author: SciankaBestia 
+# Email: kingmikaelone@gmail.com
 #
 # Here there are Various tools, like UDP Scanner, TCP Scanner
-# Firewall Identification, TTL analyzer, ICMPSender, ARPScan, 
+# Firewall Detection, TTL analyzer, ICMPSender, ARPScan, BannerGrab
+# Md5 HashCracker,
+# 
 # Other tools Coming Soon!!
 # Of course are OpenSource you can Edit&Share etc..
 #
