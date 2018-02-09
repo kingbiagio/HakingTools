@@ -14,9 +14,7 @@
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import*
-from threading import*
 from termcolor import*
-import multiprocessing 
 
 if len(sys.argv) != 2:
 	print (colored("Usage - ./ICMPsender.py [IP/24 CIDR]\n",'red'))
