@@ -51,4 +51,3 @@ for port in range(start,end+1):
     except KeyboardInterrupt:
         print "[!] Process Stopped"
         sys.exit()
-
