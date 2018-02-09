@@ -1,3 +1,4 @@
+# -----------------------------------------------------------------------
 # Basic Hacking T00ls 
 #
 # Maintainers
@@ -14,4 +15,5 @@
 # Of course are OpenSource you can Edit&Share etc..
 #
 # If you want to Improve tools, You can Join in !! :)
-# 
+# The Description are attached inside each script
+# ------------------------------------------------------------------------
