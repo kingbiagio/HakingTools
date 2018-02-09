@@ -16,8 +16,6 @@ import sys
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
-from threading import *
-import multiprocessing
 
 if len(sys.argv) != 3:	
 	print (colored("Usage- ./ACK_FW.py [IP] [Port]", 'yellow'))
