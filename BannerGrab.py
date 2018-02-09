@@ -7,7 +7,7 @@
 # prints version, protocol, patches
 #
 
-from threading import*
+from termcolor import*
 from socket import*
 import socket
 
