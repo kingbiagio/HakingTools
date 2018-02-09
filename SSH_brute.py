@@ -14,9 +14,6 @@ import sys
 import os
 import socket
 from termcolor import *
-from threading import *
-import multiprocessing
-
 global host, username, input_file #global variables
 
 print "------------------------------"
