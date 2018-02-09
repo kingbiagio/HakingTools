@@ -18,8 +18,6 @@ import subprocess
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import*
 from termcolor import*  
-from threading import*
-import multiprocessing
 
 if len(sys.argv) != 2:
 	print (colored("Usage - ./ARP_disc.py [Interface]",'blue'))
