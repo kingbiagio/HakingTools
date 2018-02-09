@@ -17,9 +17,6 @@
 # Example ./TTL.py 8.8.8.8
 #
 
-
-import multiprocessing
-from threading import *
 from scapy.all import *
 import logging
 from termcolor import *
