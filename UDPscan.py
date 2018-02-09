@@ -40,7 +40,7 @@ print "------------------------------------\n"
 
 for port in range(start,end+1):
     try: 
-        ans = sr1(IP(dst=ip)/UDP(dport=port),timeout=5,verbose =0)#change here for different Timeout&Verbose
+        ans = sr1(IP(dst=ip)/UDP(dport=port),timeout=1,verbose =0)#change here for different Timeout&Verbose
         time.sleep(1) 
         if ans == None: 
             print port,"UDP",(colored("[OPEN]",'green'))# print open port 
