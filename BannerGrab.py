@@ -8,8 +8,6 @@
 #
 
 from threading import*
-import multiprocessing
-from termcolor import*
 from socket import*
 import socket
 
