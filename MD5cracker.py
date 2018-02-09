@@ -7,8 +7,6 @@
 # requirements termcolor
 #
 
-from threading import*
-import multiprocessing
 import sys
 import os
 import socket
