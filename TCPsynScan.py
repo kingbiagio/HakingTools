@@ -24,8 +24,6 @@ logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 import sys
 from termcolor import *
-from threading import *
-import multiprocessing
 import time
 
 if len(sys.argv) != 4:
