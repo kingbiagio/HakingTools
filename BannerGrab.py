@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # Author Sciankabestia
 # Version 0.1beta
@@ -13,17 +13,18 @@ import socket
 
 print "---------------------------------------"
 print(colored("<-- BANNER GRABBING -->",'red'))
-print "Version: 0.1beta"
+print "Version: 0.2beta"
 print "Author: ScianKaBestia"
 print "Timeout is set 20 Seconds"
 print "---------------------------------------\n"
 
 socket.setdefaulttimeout(20)# Timeout
-sock = socket.socket()
-Target = raw_input(colored("[+] Enter IP: ",'yellow'))
-Port = int (raw_input (colored("[+] Enter PORT: ",'yellow')))
-sock.connect((Target, Port))
+conn = socket.socket()
+target = raw_input(colored("[+] Enter IP: ", 'yellow'))
+port = int (raw_input (colored("[+] Enter PORT: ", 'yellow')))
+conn.connect((target, port))
+conn.send(b'GET /\n\n')
 print
 
-print(colored (sock.recv(4096),'blue'))
-sock.close()
+print(colored (conn.recv(4096), 'blue'))
+conn.close()
