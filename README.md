@@ -2,7 +2,7 @@
 # Basic Hacking T00ls 
 #
 # Maintainers
-# Just me!!
+# Me && h3kd3w, if You want join in the project Let me Know :)
 #
 # Author: SciankaBestia 
 # Email: kingmikaelone@gmail.com
@@ -14,6 +14,5 @@
 # Other tools Coming Soon!!
 # Of course are OpenSource you can Edit&Share etc..
 #
-# If you want to Improve tools, You can Join in !! :)
 # The Description are attached inside each script
 # ------------------------------------------------------------------------
