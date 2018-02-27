@@ -2,7 +2,10 @@
 #
 # Reverse Shell v 1.0
 # Python 2.7.x
-# It connects to Host & Port given to It 
+# It connects to Host & Port
+# First of all, Set a Listener
+# Second run ./ReverSheller.py
+# Enjoy It :)
 
 import socket
 import os
