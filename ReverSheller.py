@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #
-# Reverse Shell v 1.0
+# Reverse Shell v 1.0 
+# Tested on UNIX
 # Python 2.7.x
 # It connects to Host & Port given to It
 # First set a Listener to grab connection from Zombie
