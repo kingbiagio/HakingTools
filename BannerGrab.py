@@ -1,10 +1,10 @@
 #!/usr/bin/python2
+# Python 2.7.x
 #
 # Author Sciankabestia
 # Version 0.1beta
 # Simple BannerGrabbing
-# It attempts to Connect to port and
-# prints version, protocol, patches
+# It attempts to Connect to port and prints version, protocol, patches
 #
 
 from termcolor import*
