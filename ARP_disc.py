@@ -1,12 +1,12 @@
 #!/usr/bin/python
-#
+# Python 2.7.x
 # Author ScianKaBestia
 # Version 1.2
 #
 # It sends ARP packet to Subnet to sollicts a IP response 
 # requirements install scapy and termcolor libraries
 # apt install scapy && pip install scapy
-# pip install termcolor
+# pip install termcolor & scapy
 #
 # Usage ./ARP_disc.py [Interface]
 # Example ./ARP_disc.py [eth0]  "<type ifconfig to see your Interface>"
