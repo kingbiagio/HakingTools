@@ -2,8 +2,8 @@
 #
 # Author ScianKabestia
 # Version 1.1
-# Python 2
-# Simple ssh brute
+# Python 2.7.x
+# DESCRIPTION: Simple ssh brute from Wordlist
 # Requirements termcolor, paramiko 
 # "pip install termcolor"; pip install paramiko
 # 
