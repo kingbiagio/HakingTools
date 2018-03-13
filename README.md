@@ -15,4 +15,7 @@
 # Of course are OpenSource you can Edit&Share etc..
 #
 # The Description are attached inside each script
+# Runing Script may required ROOT privileges
+# And Libraries like: scapy, termcolor, paramiko etc..
+# pip install "library"
 # -----------------------------------------------------------------------
