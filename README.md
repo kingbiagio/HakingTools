@@ -4,7 +4,7 @@
 # Maintainers
 # Me && h3kd3w, if You want join in the project Let me Know :)
 #
-# Author: SciankaBestia h3kd3w
+# Author: SciankaBestia & h3kd3w
 # Email: kingmikaelone@gmail.com
 #
 # Here there are Various tools, like UDP Scanner, TCP Scanner
