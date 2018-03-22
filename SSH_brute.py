@@ -14,7 +14,9 @@ import sys
 import os
 import socket
 from termcolor import *
-global host, username, input_file #global variables
+global host, username, input_file, line #global variables
+
+line = "\n--------------------------------------\n"
 
 print "------------------------------"
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
@@ -26,7 +28,7 @@ try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
 	username= raw_input(colored("[+] Enter SSH Username: ",'blue'))#just banner
 	input_file= raw_input(colored("[+] Enter Path Password list: ", 'blue'))# just banner
-	print ("[+] HAVE GOOD CRACKING ;)")#just banner
+	print ("[*] LOADING LIST..... ;)")#just banner
 
 	if os.path.exists(input_file)== False:
 		print (colored("\n[-] File Path Doesn't Exist!",'red'))
