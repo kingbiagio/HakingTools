@@ -21,8 +21,8 @@ print "Version: 1.2"
 print "------------------------------------------\n"
 
 counter=1
-user= raw_input(colored("[+] Insert User's hash You wish to Crack (or Press Enter to Skip): ",'yellow'))#Banner
-pass_in= raw_input (colored("[+] Insert User's MD5 hash: ",'yellow'))
+user= raw_input(colored("[+] Insert User's MD5 hash You wish to Crack (or Press Enter to Skip): ",'yellow'))#Banner
+pass_in= raw_input (colored("[+] Insert MD5 hash: ",'yellow'))
 pwfile= raw_input (colored("[+] Insert your path file name: ",'yellow'))
 
 print (colored("[*] Have Good Cracking ;)\n",'blue'))
