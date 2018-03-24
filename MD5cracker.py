@@ -25,8 +25,8 @@ user= raw_input(colored("[+] Insert User's MD5 hash You wish to Crack (or Press 
 pass_in= raw_input (colored("[+] Insert MD5 hash: ",'yellow'))
 pwfile= raw_input (colored("[+] Insert your path file name: ",'yellow'))
 
-print (colored("[*] Have Good Cracking ;)\n",'blue'))
-time.sleep(0.4) #Timeout, change here different Timeout
+print (colored("[*] Loading list....\n",'blue'))
+time.sleep(0.3) #Timeout, change here different Timeout
 
 try:
 	pwfile= open(pwfile, "r")
