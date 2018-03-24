@@ -26,7 +26,7 @@ pass_in= raw_input (colored("[+] Insert MD5 hash: ",'yellow'))
 pwfile= raw_input (colored("[+] Insert your path file name: ",'yellow'))
 
 print (colored("[*] Loading list....\n",'blue'))
-time.sleep(0.3) #Timeout, change here different Timeout
+time.sleep(0.4) #Timeout, change here different Timeout
 
 try:
 	pwfile= open(pwfile, "r")
