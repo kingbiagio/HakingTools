@@ -38,7 +38,7 @@ print "Version: 1.1"
 print "---------------------------------\n"
 
 if ans== None: # if none response was returned there is a Firewall behind or Host is Down
-	print(colored("[!] No response was returned Firewall blocks [ICMP] or Host is Down",'red'))
+	print(colored("[!] No response was returned, Firewall blocks [ICMP_request] or Host is Down",'red'))
 
 elif int (ans[IP].ttl) >=254:# if OS is CiscoRouterNetwork
         print(colored("[+] Host is Cisco Router Network",'blue'))
