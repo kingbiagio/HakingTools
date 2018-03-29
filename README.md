@@ -5,7 +5,7 @@
 # Me && h3kd3w, if You want join in the project Let me Know :)
 #
 # Author: SciankaBestia & h3kd3w
-# Email: kingmikaelone@gmail.com
+# TELEGRAM: Mike Black
 #
 # Here there are Various tools, like UDP Scanner, TCP Scanner
 # Firewall Detection, TTL analyzer, ICMPSender, ARPScan, BannerGrab
