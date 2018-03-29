@@ -27,7 +27,7 @@ print "------------------------------\n"
 try:
 	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
 	username= raw_input(colored("[+] Enter SSH Username: ",'blue'))#just banner
-	input_file= raw_input(colored("[+] Enter Path Password list: ", 'blue'))# just banner
+	input_file= raw_input(colored("[+] Enter Wordlist path: ", 'blue'))# just banner
 	print ("[*] LOADING LIST..... ;)")#just banner
 
 	if os.path.exists(input_file)== False:
