@@ -47,7 +47,7 @@ print "----------------------------------------\n"
 for port in range(start,end+1):
     try:                                  #Set Timeout   #Set Verbose
         ans = sr1(IP(dst=ip)/TCP(dport=port),timeout=0.3 ,verbose =0) #variable created in scapy
-        time.sleep(0.2)
+        time.sleep(0.2)# Comment for more Speed
         if ans == None: 
             print port,"TCP", (colored("[NO RESPONSE RETURNED, PORT FILTERED/HOST DOWN]",'red'))# port is either Filtered or Closed
             pass
