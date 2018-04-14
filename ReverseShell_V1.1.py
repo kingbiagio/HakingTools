@@ -17,7 +17,7 @@ from termcolor import*
 
 # Description
 if len(sys.argv) != 3: 
-	print(colored("Usage - ./RShell.py [REMOTE HOST] [PORT]",'yellow'))
+	print(colored("Usage - ./RShell.py [REMOTE-SERVER] [PORT]",'yellow'))
 	print(colored("Example - ./RShell.py 195.168.3.67 80",'yellow'))
 	sys.exit()
 
