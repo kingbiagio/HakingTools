@@ -9,7 +9,6 @@
 # Example nc -lvp 443 
 # Requirements pip install termcolor
 
-import threading
 import socket
 import sys
 import os
