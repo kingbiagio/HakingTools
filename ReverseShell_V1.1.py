@@ -20,7 +20,7 @@ if len(sys.argv) != 3:
 	#print(colored("Usage - ./RShell.py [REMOTE-SERVER] [PORT]",'yellow'))
 	#print(colored("Example - ./RShell.py 195.168.3.67 80",'yellow'))
 	print "Usage - ./ReverseShell_V1.1.py [REMOTE-SERVER] [PORT]"
-	print "Usage - ./ReverseShell_V1.1.py" 8.8.8.8 22"
+	print "Usage - ./ReverseShell_V1.1.py 8.8.8.8 22"
 	sys.exit()
 
 # Global Variables
