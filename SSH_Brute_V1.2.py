@@ -74,7 +74,7 @@ for i in input_file.readlines():
 		elif response==1: #[!]Authentication Failed
 			print(colored("[?] USER: %s [?] TRYING PASSWORD: %s [!]LOGIN INCORRECT" %(username,password),'yellow'))
 		elif response==2: #[!]Connection Refused
-			print(colored("[ERROR] COULDN'T CONNECT TO HOST: %s ; IS DOWN OR FIREWALL IN PLACE" %(host),'yellow'))
+			print(colored("[ERROR] COULDN'T CONNECT TO HOST: %s ; IS DOWN OR THERE IS FIREWALL IN PLACE" %(host),'yellow'))
 			sys.exit(2)
 			
 	except KeyboardInterrupt:# If user press Ctrl+c
