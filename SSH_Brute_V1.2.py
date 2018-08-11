@@ -72,7 +72,7 @@ for i in input_file.readlines():
 			print(colored("SSH Login - [ssh user@IP]",'grey'))#Print values,
 			sys.exit(0)
 		elif response==1: #[!]Authentication Failed
-			print(colored(" USER: %s  TRYING PASSWORD: %s [LOGIN INCORRECT]" %(username,password),'yellow'))
+			print(colored("USER: %s  TRYING PASSWORD: %s   [LOGIN INCORRECT]" %(username,password),'yellow'))
 		elif response==2: #[!]Connection Refused
 			print(colored("[ERROR] COULDN'T CONNECT TO HOST: %s ; IS DOWN OR THERE IS FIREWALL IN PLACE" %(host),'yellow'))
 			sys.exit(2)
