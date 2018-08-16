@@ -16,6 +16,6 @@
 #
 # The Description are attached inside each script
 # Runing Script may required ROOT privileges
-# And Libraries like: scapy, termcolor, paramiko etc..
-# pip install "library"
+#
+# To install required libraries Run "pip install -r requirements.txt"
 # ---------------------------------------------------------------------
