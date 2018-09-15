@@ -4,7 +4,7 @@
 # Maintainers
 # Me && h3kd3w, if You want join in the project Let me Know :)
 #
-# Author: SciankaBestia & h3kd3w
+# Author: Mikael & h3kd3w
 # TELEGRAM: @Mikele_boy
 #
 # Here there are Various tools, like UDP Scanner, TCP Scanner
