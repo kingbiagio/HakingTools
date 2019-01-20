@@ -15,7 +15,8 @@
 # Of course are OpenSource you can Edit&Share etc..
 #
 # The Description are attached inside each script
-# Runing Script may required ROOT privileges
+# Runing Script may require ROOT privileges
 #
+# Install python-pip
 # To install required libraries Run "pip install -r requirements.txt"
 # ---------------------------------------------------------------------
