@@ -16,7 +16,7 @@ import time
 
 print "------------------------------------------"
 print (colored("<<<< MD5 CRACKER >>>",'yellow')) # just banner
-print "Author: ScianKaBestia"
+print "Author: Mikael"
 print "Version: 1.2"
 print "------------------------------------------\n"
 
