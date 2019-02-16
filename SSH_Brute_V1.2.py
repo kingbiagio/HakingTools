@@ -24,7 +24,7 @@ line = "\n--------------------------------------\n"
 print "------------------------------"
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
 print          "        IPv4 & IPv6  "
-print "Author: ScianKaBestia"
+print "Author: Mikael"
 print "Version: 1.2"
 print "------------------------------\n"
 
