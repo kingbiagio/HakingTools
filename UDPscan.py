@@ -3,7 +3,7 @@
 # some Bug are yet in place!!
 # -----------------------------------------------------------
 # Python 2                                                   |
-# Author ScianKabestia                                       |
+# Author Miakel                                              |
 # Version 1.3beta                                            |
 # Bug Fixes, increase speed, print Closed Port & Open Ports  |
 #                                                            |
@@ -34,7 +34,7 @@ else:#--global variables--#
 
 print "------------------------------------"
 print(colored("<--- UDP PORT SCANNER --->",'blue'))
-print "Author: ScianKaBestia"
+print "Author: Mikael"
 print "Version: 1.3beta"
 print "------------------------------------\n"
 
