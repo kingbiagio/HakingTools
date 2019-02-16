@@ -7,7 +7,7 @@
 # 
 # Set Listener such as Netcat, Msfconsole or other ones
 # Example nc -lvp 443 
-# Requirements pip install termcolor
+# doesn' require R00T privileges
 
 import socket
 import sys
