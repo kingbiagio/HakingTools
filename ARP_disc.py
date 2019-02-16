@@ -29,7 +29,7 @@ prefix = ip.split('.')[0] + '.' + ip.split('.')[1] + '.' + ip.split('.')[2] + '.
 
 print "-----------------------------------"
 print (colored("<--ARP SENDER-->",'blue'))
-print "Author: ScianKaBestia"
+print "Author: Mikael"
 print "Version: 1.2"
 print "-----------------------------------\n"
 
