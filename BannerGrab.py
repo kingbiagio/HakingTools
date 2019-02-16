@@ -14,7 +14,7 @@ import socket
 print "---------------------------------------"
 print(colored("<-- BANNER GRABBING -->",'red'))
 print "Version: 0.2beta"
-print "Author: ScianKaBestia & h3kd3w"
+print "Author: Mikael & h3kd3w"
 print "Timeout is set 20 Seconds"
 print "---------------------------------------\n"
 
