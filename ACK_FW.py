@@ -23,7 +23,7 @@ if len(sys.argv) != 3:
 
 ip = sys.argv[1]
 port = int (sys.argv[2])
-Author = "SciancaBestia"
+Author = "Mikael"
 Version = 1.2
 
 #Change here for different Timeout&Verbose
