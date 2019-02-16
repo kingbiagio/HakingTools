@@ -2,7 +2,7 @@
 #
 #--------------------------------------------------------------
 # Python 2                                                     |
-# Auhtor: ScianKaBestia                                        |
+# Auhtor: Mikael                                               |
 # Version: 1.4                                                 |
 #                                                              |
 # Bug fixes, increased speed, print Open & Closed Ports        |
@@ -35,7 +35,7 @@ else:
     start = int(sys.argv[2]) 
     end = int(sys.argv[3])
     version = 1.4
-    Author = "ScianKaBestia"
+    Author = "Mikael"
 
 # Banner
 print "----------------------------------------"
