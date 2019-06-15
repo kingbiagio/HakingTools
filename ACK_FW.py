@@ -34,6 +34,7 @@ print "--------------------------------------------"
 print (colored("<--FIREWALL DETECTION-->",'red'))
 print "Version",Version
 print "Author",Author
+print "HOST:" ,ip
 print "-------------------------------------------\n"
 
 # If ACK_response and SYN_response are NONE, the Port
