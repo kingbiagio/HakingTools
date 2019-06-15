@@ -14,7 +14,7 @@
 # pip install termcolor                                        | 
 # default Timeout 5 seconds                                    | 
 #                                                              |
-# Usage - ./TCPsynScan.py [IP] [First Port] [Last Port]        |
+# Usage - ./TCPsynScan.py [IP/HOSTNAME] [First Port] [Last Port]        |
 # Example - ./TCPsynScan.py 8.8.8.8 1 80                       |
 #--------------------------------------------------------------
 
