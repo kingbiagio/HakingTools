@@ -18,7 +18,7 @@ logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 
 if len(sys.argv) != 3:	
-	print (colored("Usage- ./ACK_FW.py [IP] [Port]", 'yellow'))
+	print (colored("Usage- ./ACK_FW.py [IP/HOSTNAME] [Port]", 'yellow'))
 	sys.exit()			
 
 ip = sys.argv[1]
@@ -34,7 +34,7 @@ print "--------------------------------------------"
 print (colored("<--FIREWALL DETECTION-->",'red'))
 print "Version",Version
 print "Author",Author
-print "HOST:" ,ip
+print "IP/HOSTNAME:" ,ip
 print "-------------------------------------------\n"
 
 # If ACK_response and SYN_response are NONE, the Port
