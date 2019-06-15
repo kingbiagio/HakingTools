@@ -7,8 +7,7 @@
 # if port is filtered we received a RST flag
 # Requirements termcolor "pip install termcolor"
 # 
-# Usage - ./ACK_FW [Target IP] [Port]
-# Example - ./ACK_FW 8.8.8.8 53
+# Usage - ./ACK_FW [IP/HOSTNAME] [Port]
 #
 
 from termcolor import*
