@@ -7,7 +7,7 @@ import sys
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 import subprocess
 
-subprocess.call('clear', shell=True)
+# subprocess.call('clear', shell=True)
 
 print ""
 print (colored("      -------------------------------------- ", 'red'))
