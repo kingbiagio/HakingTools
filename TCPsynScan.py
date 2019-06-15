@@ -27,7 +27,7 @@ from termcolor import *
 import time
 
 if len(sys.argv) != 4:
-    print (colored("Usage - ./TCPsynScan.py [Target-IP] [First Port] [Last Port]",'blue')) #just description
+    print (colored("Usage - ./TCPsynScan.py [IP/HOSTNAME] [First Port] [Last Port]",'blue')) #just description
     sys.exit()
 
 else: 
@@ -42,7 +42,7 @@ print "----------------------------------------"
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))
 print "Version:",version
 print "Author:" ,Author
-print "HOST:" ,ip
+print "IP/HOSTNAME:" ,ip
 print "----------------------------------------\n"
 
 for port in range(start,end+1):
