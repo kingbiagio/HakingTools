@@ -42,6 +42,7 @@ print "----------------------------------------"
 print (colored("<--TCP SYN PORT SCANNER-->",'blue'))
 print "Version:",version
 print "Author:" ,Author
+print "HOST:" ,ip
 print "----------------------------------------\n"
 
 for port in range(start,end+1):
