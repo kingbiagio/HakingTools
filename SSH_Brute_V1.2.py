@@ -32,7 +32,7 @@ print "------------------------------\n"
 try:    
 	print                    "WARNING: for IPv6 use %interface"
 	print                    "EXAMPLE: fe80::a00:27ff:fee0:8b72%eth0"
-	host= raw_input (colored(     "[+] Enter Target IP: " ,'blue'))
+	host= raw_input (colored(     "[+] Enter Target IP/HOSTNAME:" ,'blue'))
 	username= raw_input(colored(  "[+] Enter SSH Username: ",'blue'))
 	input_file= raw_input(colored("[+] Enter Wordlist path: ", 'blue'))
 	print                         "[*]... Loading List ..... " 
