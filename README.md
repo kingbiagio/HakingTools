@@ -5,7 +5,6 @@
 # Me && h3kd3w, if You want join in the project Let me Know :)
 #
 # Author: Mikael & h3kd3w
-# TELEGRAM: @Mikele_boy
 #
 # Here there are Various tools, like UDP Scanner, TCP Scanner
 # Firewall Detection, TTL analyzer, ICMPSender, ARPScan, BannerGrab
