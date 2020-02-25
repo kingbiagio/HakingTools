@@ -1,4 +1,8 @@
 #!/usr/bin/python
+#
+# Author Mikael
+# Versione 1.2
+#
 
 from scapy.all import *
 import logging
@@ -17,8 +21,6 @@ print (colored("      |          Author: Mikael            | ", 'red'))
 print (colored("      -------------------------------------- ", 'red'))
 
 if len(sys.argv) != 2:
-	print
-	print (colored("Execute: chmod +x TTL_ANALYZER_V1.2", 'yellow'))
 	print 
 	print (colored("Usage:", 'yellow'))
 	print (colored("        ./TTL_ANALYZER_V1.2.py [IP/HOSTNAME]", 'yellow'))
