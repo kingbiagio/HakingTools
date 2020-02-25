@@ -48,7 +48,7 @@ elif int (ans[IP].ttl) == 255:
 	print "                Stratus_OS V.TCP_OS | Sun_OS V5.7 | Ultrix V4.2-4.5 | Irix V6.5.3/6.5.8"
 	print "                Linux_Kernel V2.2.14/2.4"
 	print
-	print "[+] [ICMP_ECHO-REQUEST] TTL_VALUE = 255"
+	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 255"
 	print "[+] [IP/HOSTNAME]:",                ip
 	print 
 
@@ -56,7 +56,7 @@ elif int (ans[IP].ttl) == 254 :
 	print
 	print "[+] HOST SEEMS: Cisco_OS "
 	print
-	print "[+] [ICMP_ECHO-REQUEST] TTL_VALUE = 254"
+	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 254"
 	print "[+] [IP/HOSTNAME]:",                ip
 	print
 
@@ -64,7 +64,7 @@ elif int (ans[IP].ttl) == 200:
 	print
 	print "[+] HOST SEEMS: MPE/IX (HP)"
 	print
-	print "[+] [ICMP_ECHO-REQUEST] TTL_VALUE = 200"
+	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 200"
 	print "[+] [IP/HOSTNAME]:",                ip
 	print
 
@@ -77,7 +77,7 @@ elif int (ans[IP].ttl) == 128:
 	print "                                                                2016/2019"
 	print "                Windows_Os Desktop XP/Vista/7/10"
 	print
-	print "[+] [ICMP_ECHO-REQUEST] TTL_VALUE = 128"
+	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 128"
 	print "[+] [IP/HOSTNAME]:",                ip
 	print
 
@@ -86,7 +86,7 @@ elif int (ans[IP].ttl) == 64:
 	print "[+] HOST SEEMS: Compa V_Tru64/5.0 | Foundry_OS | FreeBSD V5 | Juniper_Os | Linux_Kernel V2.0.x"
 	print "                Linux_Red Hat V9 | Mac_OS X Family Desktop & Server | Netgear Os | OS/2"
 	print ""
-	print "[+] [ICMP_ECHO-REQUEST] TTL_VALUE = 64"
+	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 64"
 	print "[+] [IP/HOSTNAME]:",                ip
 	print
 
@@ -94,6 +94,6 @@ else:
 	print
 	print "[?] UNKNOWN HOST"
 	print ""
-	print (colored("[?] [ICMP_ECHO-REQUEST] TTL_VALUE =",'yellow')), int (ans[IP].ttl) # print TTL_Value
+	print (colored("[?] [ICMP_ECHO-REPLY] TTL_VALUE =",'yellow')), int (ans[IP].ttl) # print TTL_Value
 	print "[+] [IP/HOSTNAME]:",                           ip
 	print 
