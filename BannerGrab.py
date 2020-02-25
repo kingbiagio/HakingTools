@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 # Python 2.7.x
 #
-# Author Sciankabestia
+# Author 
 # Version 0.1beta
 # Simple BannerGrabbing
 # It attempts to Connect to port and prints version, protocol, patches
