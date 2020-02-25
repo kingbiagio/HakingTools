@@ -26,7 +26,7 @@ if len(sys.argv) != 2:
 	print (colored("        ./TTL_ANALYZER_V1.2.py [IP/HOSTNAME]", 'yellow'))
 	print ""
 	print (colored("Example:", 'yellow'))
-	print (colored("        ./TTL_ANALYZER_V1.2 8.8.8.8 OR./TTL_ANALYZER_V1.2 google-public-dns-a.google.com", 'yellow'))
+	print (colored("        ./TTL_ANALYZER_V1.2 8.8.8.8 OR ./TTL_ANALYZER_V1.2 google-public-dns-a.google.com", 'yellow'))
 	print 
 	sys.exit()
 
