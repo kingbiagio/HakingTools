@@ -6,7 +6,7 @@
 #
 # Author: Mikael & h3kd3w
 #
-# Here there are Various tools, like UDP Scanner, TCP Scanner
+# Here there are Various tools, like, TCP Scanner
 # Firewall Detection, TTL analyzer, ICMPSender, ARPScan, BannerGrab
 # Md5 HashCracker, Reverse Shell
 # 
