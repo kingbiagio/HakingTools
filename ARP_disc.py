@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Python 2.7.x
-# Author ScianKaBestia
+# Author Mikael
 # Version 1.2
 #
 # It sends ARP packet to Subnet to sollicts a IP response 
