@@ -1,22 +1,22 @@
 #!/usr/bin/python
 #
-#--------------------------------------------------------------
-# Python 2                                                     |
-# Auhtor: Mikael                                               |
-# Version: 1.4                                                 |
-#                                                              |
-# Bug fixes, increased speed, print Open & Closed Ports        |
-#                                         Filtered Ports       |
-# stealth scanner, it doesn't complete the three way handshake |
-#                                                              |
-# requirements scapy, termcolor                                |
-# apt-get install scapy                                        |
-# pip install termcolor                                        | 
-# default Timeout 5 seconds                                    | 
-#                                                              |
-# Usage - ./TCPsynScan.py [IP/HOSTNAME] [First Port] [Last Port]        |
-# Example - ./TCPsynScan.py 8.8.8.8 1 80                       |
-#--------------------------------------------------------------
+#
+# Python 2                                                     
+# Auhtor: Mikael                                               
+# Version: 1.2                                                 
+#                                                              
+# Bug fixes, increased speed, print Open & Closed Ports        
+#                                         Filtered Ports       
+# stealth scanner, it doesn't complete the three way handshake 
+#                                                              
+# requirements scapy, termcolor                                
+# apt-get install scapy                                        
+# pip install termcolor                                        
+# default Timeout 5 seconds                                    
+#                                                              
+# Usage - ./TCPsynScan.py [IP/HOSTNAME] [First Port] [Last Port]        
+# Example - ./TCPsynScan.py 8.8.8.8 1 80                       
+#
 
 
 import logging
