@@ -1,4 +1,4 @@
-# Run pip install -r requirements.txt as ROOT
+# Run "sudo pip install -r requirements.txt" as ROOT
 scapy
 termcolor
 paramiko
