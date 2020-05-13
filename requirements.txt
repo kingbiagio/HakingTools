@@ -2,4 +2,4 @@
 scapy
 termcolor
 paramiko
-request
+requests
