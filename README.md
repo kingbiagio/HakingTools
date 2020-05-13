@@ -17,5 +17,5 @@
 # Runing Script may require ROOT privileges
 #
 # Install python-pip
-# To install required libraries Run "pip install -r requirements.txt"
+# To install required libraries Run "sudo pip install -r requirements.txt"
 # -------------------------------------------------------------------
