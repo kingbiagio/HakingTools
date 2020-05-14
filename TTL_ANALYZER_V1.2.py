@@ -75,7 +75,7 @@ elif int (ans[IP].ttl) == 128:
 	print "                                                                2008/2008_R2"
 	print "                                                                2012/2012_R2"
 	print "                                                                2016/2019"
-	print "                Windows_Os Desktop XP/Vista/7/10"
+	print "                Windows_Os Desktop XP/Vista/7/8/8.1/10"
 	print
 	print "[+] [ICMP_ECHO-REPLY] TTL_VALUE = 128"
 	print "[+] [IP/HOSTNAME]:",                ip
