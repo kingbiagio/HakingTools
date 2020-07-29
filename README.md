@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------
 # Python Hacking T00ls 
 #
-# Maintainers
+# Maintainers:
 # Me(Mikael) && h3kd3w
 #
 #
