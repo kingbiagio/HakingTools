@@ -2,9 +2,8 @@
 # Python Hacking T00ls 
 #
 # Maintainers
-# Me && h3kd3w
+# Me(Mikael) && h3kd3w
 #
-# Author: Mikael & h3kd3w
 #
 # Here there are Various tools, like, TCP Scanner
 # Firewall Detection, TTL analyzer, ICMPSender, ARPScan, BannerGrab
