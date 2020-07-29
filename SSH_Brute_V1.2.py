@@ -11,7 +11,6 @@
 #
 
 import paramiko
-import time
 import sys
 import os
 import socket
@@ -19,7 +18,7 @@ from termcolor import *
 global host, port, username, input_file, line
 # Global Variables
 
-line = "\n---------------------------------------------------------------------\n"
+line = "\n--------------------------------------------------------------------------\n"
 
 print "------------------------------"
 print (colored("<<< [+] SSH BRUTE >>>",'yellow'))
