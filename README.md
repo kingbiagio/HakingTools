@@ -2,7 +2,7 @@
 # Python Hacking T00ls 
 #
 # Maintainers
-# Me && h3kd3w, if You want join in the project Let me Know :)
+# Me && h3kd3w
 #
 # Author: Mikael & h3kd3w
 #
