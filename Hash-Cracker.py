@@ -6,11 +6,12 @@ import sys
 
 ascii_banner = pyfiglet.figlet_format("HASH CRACKER", font="digital")
 print(ascii_banner)
-print("Hash Supported: MD5, SHA-256")
+print("Hash Supported: MD5, SHA256\n")
+print("USE - ./Hash-Cracker.py [WORDLIST-PATH] [HASH]")
+print("EX - ./Hash-Cracker.py /usr/share/wordlist.txt 717d3e7b9278e122e65d6240c7ea9b81")
 
 wordlist_location = sys.argv[1]
 hash_input = sys.argv[2]
-
 
 print("[*] Start Cracking...")
 with open(wordlist_location, 'r', encoding='latin-1') as file:
