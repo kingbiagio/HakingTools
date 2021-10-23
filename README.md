@@ -17,4 +17,8 @@
 #
 # Install python-pip
 # To install required libraries Run "sudo pip install -r requirements.txt"
+#
+# To convert script from Python-2 to Python-3 use this tutorial: 
+# 
+# https://www.geeksforgeeks.org/automate-the-conversion-from-python2-to-python3/
 # -------------------------------------------------------------------
