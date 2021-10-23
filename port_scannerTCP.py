@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# sudo apt install python3-pyfiglet
 
 import sys
 import socket
