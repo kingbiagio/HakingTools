@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# sudo apt install python3-scapy
 
 from scapy.config import conf
 conf.ipv6_enabled = False
