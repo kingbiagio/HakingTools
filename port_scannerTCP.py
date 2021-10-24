@@ -10,6 +10,7 @@ print(ascii_banner)
 
 print("USE - ./port_scannerTCP.py [HOSTNAME/IP]")
 print("EX - ./port_scannerTCP.py pentestvm.local")
+print("")
 
 ip = sys.argv[1] 
 open_ports =[] 
