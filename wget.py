@@ -2,6 +2,10 @@
 
 import requests, sys
 
+print("USE - ./wget.py [URL]")
+print("EX - ./wget.py https://download.sysinternals.com/files/PSTools.zip")
+print("")
+
 url = sys.argv[1]
 print('Download Starting...')
  
