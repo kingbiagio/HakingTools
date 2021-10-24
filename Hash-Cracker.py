@@ -10,6 +10,7 @@ print(ascii_banner)
 print("Hash Supported: MD5, SHA256\n")
 print("USE - ./Hash-Cracker.py [WORDLIST-PATH] [HASH]")
 print("EX - ./Hash-Cracker.py /usr/share/wordlist.txt 717d3e7b9278e122e65d6240c7ea9b81")
+print("")
 
 wordlist_location = sys.argv[1]
 hash_input = sys.argv[2]
