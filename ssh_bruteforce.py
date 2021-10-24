@@ -4,6 +4,8 @@ import paramiko
 import sys
 import os
 
+print("---> Python SSH Bruteforce <---")
+print("")
 print("USE - ./ssh_bruteforce.py [HOSTNAME/IP] [PORT] [USERNAME] [WORDLIST-PATH]")
 print("EX - ./ssh_bruteforce.py victim.local 2222 user /usr/share/wordlist.txt")
 print("")
@@ -15,6 +17,7 @@ password_file = sys.argv[4]
 
 print("")
 print("[+] Starting Process...")
+print("")
 
 def ssh_connect(password, code=0):
     ssh = paramiko.SSHClient()
