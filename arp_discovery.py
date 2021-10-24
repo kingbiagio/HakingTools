@@ -19,7 +19,7 @@ broadcastMac = "ff:ff:ff:ff:ff:ff"
 print("[+] Sending ARP packets..")
 print("")
 packet = Ether(dst=broadcastMac)/ARP(pdst = ip_range) 
-#conf.ipv6_enabled=False
+
 ans, unans = srp(packet, timeout =5, iface=interface, inter=0.1, verbose=False)
 
 for send,receive in ans:
