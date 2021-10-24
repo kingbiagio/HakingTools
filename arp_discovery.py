@@ -6,7 +6,7 @@ conf.ipv6_enabled = False
 from scapy.all import *
 
 
-print("<--- Python ARP DISCOVERY --->")
+print("<--- Python ARP Discovery --->")
 print("")
 print("USE - ./arp_discovery.py interface IP/CIDR")
 print("EX - ./arp_discovery.py eth1 192.168.0.0/24")
