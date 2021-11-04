@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # sudo apt install python3-pyfiglet
 
+import binascii
 import hashlib
 import pyfiglet
 import sys
