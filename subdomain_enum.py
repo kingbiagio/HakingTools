@@ -3,7 +3,7 @@
 import sys, os, requests
 
 print("")
-print("--> SUBDOMAIN ENUMERATION <--")
+print("--> HTTP SUBDOMAIN ENUMERATION <--")
 print("")
 print("USE - ./subdomain_enum.py [WORDLIST-PATH] [http or https] [IP/HOSTNAME]")
 print("EX -  ./subdomain_enum.py /usr/share/example.txt http google.com")
