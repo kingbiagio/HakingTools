@@ -10,7 +10,7 @@ fi
 prefix=$(echo $1 | cut -d '.' -f 1-3)
 
 for addr in $(seq 1 254); do
-arping -w 3 -c 1 $prefix.$addr | grep "bytes from" &
+arping -c 1 $prefix.$addr | grep "bytes from" &
 done
 
 sleep 5
