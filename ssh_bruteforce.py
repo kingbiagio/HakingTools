@@ -39,6 +39,8 @@ with open(password_file, 'r', encoding='latin-1') as file:
 
             if response == 0:
                  print('Password found: '+ password)
+                 print('For user: '+ username)
+                 print('Target: '+ target)
                  exit(0)
             elif response == 1:
                 pass
