@@ -46,4 +46,4 @@ with open(password_file, 'r', encoding='latin-1') as file:
             print(e)
         pass
 
-input_file.close()
+file.close()
