@@ -1,2 +1,5 @@
 echo "-> ICMP Host Discovery <-"
-1..15 | %{echo “192.168.1.$_”; ping -n 1 192.168.1.$_ | Select-String ttl}
+echo ""
+1..15 | % {echo "10.10.10.$_"; ping -n 1 10.10.10.$_ | Select-String ttl}
+echo ""
+echo "-> Finish <-"
